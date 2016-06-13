@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A94F19541D0E822C00ABA993 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A94F19531D0E822C00ABA993 /* main.m */; };
+		A94F19571D0E822C00ABA993 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A94F19561D0E822C00ABA993 /* AppDelegate.m */; };
+		A94F195A1D0E822C00ABA993 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A94F19591D0E822C00ABA993 /* ViewController.m */; };
+		A94F195D1D0E822C00ABA993 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A94F195B1D0E822C00ABA993 /* Main.storyboard */; };
+		A94F195F1D0E822C00ABA993 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A94F195E1D0E822C00ABA993 /* Assets.xcassets */; };
+		A94F19621D0E822C00ABA993 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A94F19601D0E822C00ABA993 /* LaunchScreen.storyboard */; };
+		A94F196D1D0E822C00ABA993 /* DynamicControlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A94F196C1D0E822C00ABA993 /* DynamicControlTests.m */; };
+		A94F19781D0E822C00ABA993 /* DynamicControlUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A94F19771D0E822C00ABA993 /* DynamicControlUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A94F19691D0E822C00ABA993 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A94F19471D0E822C00ABA993 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A94F194E1D0E822C00ABA993;
+			remoteInfo = DynamicControl;
+		};
+		A94F19741D0E822C00ABA993 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A94F19471D0E822C00ABA993 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A94F194E1D0E822C00ABA993;
+			remoteInfo = DynamicControl;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A94F194F1D0E822C00ABA993 /* DynamicControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DynamicControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A94F19531D0E822C00ABA993 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A94F19551D0E822C00ABA993 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A94F19561D0E822C00ABA993 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A94F19581D0E822C00ABA993 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A94F19591D0E822C00ABA993 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A94F195C1D0E822C00ABA993 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A94F195E1D0E822C00ABA993 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A94F19611D0E822C00ABA993 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A94F19631D0E822C00ABA993 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A94F19681D0E822C00ABA993 /* DynamicControlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DynamicControlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A94F196C1D0E822C00ABA993 /* DynamicControlTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicControlTests.m; sourceTree = "<group>"; };
+		A94F196E1D0E822C00ABA993 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A94F19731D0E822C00ABA993 /* DynamicControlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DynamicControlUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A94F19771D0E822C00ABA993 /* DynamicControlUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicControlUITests.m; sourceTree = "<group>"; };
+		A94F19791D0E822C00ABA993 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A94F194C1D0E822C00ABA993 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A94F19651D0E822C00ABA993 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A94F19701D0E822C00ABA993 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A94F19461D0E822C00ABA993 = {
+			isa = PBXGroup;
+			children = (
+				A94F19511D0E822C00ABA993 /* DynamicControl */,
+				A94F196B1D0E822C00ABA993 /* DynamicControlTests */,
+				A94F19761D0E822C00ABA993 /* DynamicControlUITests */,
+				A94F19501D0E822C00ABA993 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A94F19501D0E822C00ABA993 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A94F194F1D0E822C00ABA993 /* DynamicControl.app */,
+				A94F19681D0E822C00ABA993 /* DynamicControlTests.xctest */,
+				A94F19731D0E822C00ABA993 /* DynamicControlUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A94F19511D0E822C00ABA993 /* DynamicControl */ = {
+			isa = PBXGroup;
+			children = (
+				A94F19551D0E822C00ABA993 /* AppDelegate.h */,
+				A94F19561D0E822C00ABA993 /* AppDelegate.m */,
+				A94F19581D0E822C00ABA993 /* ViewController.h */,
+				A94F19591D0E822C00ABA993 /* ViewController.m */,
+				A94F195B1D0E822C00ABA993 /* Main.storyboard */,
+				A94F195E1D0E822C00ABA993 /* Assets.xcassets */,
+				A94F19601D0E822C00ABA993 /* LaunchScreen.storyboard */,
+				A94F19631D0E822C00ABA993 /* Info.plist */,
+				A94F19521D0E822C00ABA993 /* Supporting Files */,
+			);
+			path = DynamicControl;
+			sourceTree = "<group>";
+		};
+		A94F19521D0E822C00ABA993 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A94F19531D0E822C00ABA993 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A94F196B1D0E822C00ABA993 /* DynamicControlTests */ = {
+			isa = PBXGroup;
+			children = (
+				A94F196C1D0E822C00ABA993 /* DynamicControlTests.m */,
+				A94F196E1D0E822C00ABA993 /* Info.plist */,
+			);
+			path = DynamicControlTests;
+			sourceTree = "<group>";
+		};
+		A94F19761D0E822C00ABA993 /* DynamicControlUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A94F19771D0E822C00ABA993 /* DynamicControlUITests.m */,
+				A94F19791D0E822C00ABA993 /* Info.plist */,
+			);
+			path = DynamicControlUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A94F194E1D0E822C00ABA993 /* DynamicControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A94F197C1D0E822C00ABA993 /* Build configuration list for PBXNativeTarget "DynamicControl" */;
+			buildPhases = (
+				A94F194B1D0E822C00ABA993 /* Sources */,
+				A94F194C1D0E822C00ABA993 /* Frameworks */,
+				A94F194D1D0E822C00ABA993 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DynamicControl;
+			productName = DynamicControl;
+			productReference = A94F194F1D0E822C00ABA993 /* DynamicControl.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A94F19671D0E822C00ABA993 /* DynamicControlTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A94F197F1D0E822C00ABA993 /* Build configuration list for PBXNativeTarget "DynamicControlTests" */;
+			buildPhases = (
+				A94F19641D0E822C00ABA993 /* Sources */,
+				A94F19651D0E822C00ABA993 /* Frameworks */,
+				A94F19661D0E822C00ABA993 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A94F196A1D0E822C00ABA993 /* PBXTargetDependency */,
+			);
+			name = DynamicControlTests;
+			productName = DynamicControlTests;
+			productReference = A94F19681D0E822C00ABA993 /* DynamicControlTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A94F19721D0E822C00ABA993 /* DynamicControlUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A94F19821D0E822C00ABA993 /* Build configuration list for PBXNativeTarget "DynamicControlUITests" */;
+			buildPhases = (
+				A94F196F1D0E822C00ABA993 /* Sources */,
+				A94F19701D0E822C00ABA993 /* Frameworks */,
+				A94F19711D0E822C00ABA993 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A94F19751D0E822C00ABA993 /* PBXTargetDependency */,
+			);
+			name = DynamicControlUITests;
+			productName = DynamicControlUITests;
+			productReference = A94F19731D0E822C00ABA993 /* DynamicControlUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A94F19471D0E822C00ABA993 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Ajay;
+				TargetAttributes = {
+					A94F194E1D0E822C00ABA993 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					A94F19671D0E822C00ABA993 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = A94F194E1D0E822C00ABA993;
+					};
+					A94F19721D0E822C00ABA993 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = A94F194E1D0E822C00ABA993;
+					};
+				};
+			};
+			buildConfigurationList = A94F194A1D0E822C00ABA993 /* Build configuration list for PBXProject "DynamicControl" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A94F19461D0E822C00ABA993;
+			productRefGroup = A94F19501D0E822C00ABA993 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A94F194E1D0E822C00ABA993 /* DynamicControl */,
+				A94F19671D0E822C00ABA993 /* DynamicControlTests */,
+				A94F19721D0E822C00ABA993 /* DynamicControlUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A94F194D1D0E822C00ABA993 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A94F19621D0E822C00ABA993 /* LaunchScreen.storyboard in Resources */,
+				A94F195F1D0E822C00ABA993 /* Assets.xcassets in Resources */,
+				A94F195D1D0E822C00ABA993 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A94F19661D0E822C00ABA993 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A94F19711D0E822C00ABA993 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A94F194B1D0E822C00ABA993 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A94F195A1D0E822C00ABA993 /* ViewController.m in Sources */,
+				A94F19571D0E822C00ABA993 /* AppDelegate.m in Sources */,
+				A94F19541D0E822C00ABA993 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A94F19641D0E822C00ABA993 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A94F196D1D0E822C00ABA993 /* DynamicControlTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A94F196F1D0E822C00ABA993 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A94F19781D0E822C00ABA993 /* DynamicControlUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A94F196A1D0E822C00ABA993 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A94F194E1D0E822C00ABA993 /* DynamicControl */;
+			targetProxy = A94F19691D0E822C00ABA993 /* PBXContainerItemProxy */;
+		};
+		A94F19751D0E822C00ABA993 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A94F194E1D0E822C00ABA993 /* DynamicControl */;
+			targetProxy = A94F19741D0E822C00ABA993 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A94F195B1D0E822C00ABA993 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A94F195C1D0E822C00ABA993 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A94F19601D0E822C00ABA993 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A94F19611D0E822C00ABA993 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A94F197A1D0E822C00ABA993 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A94F197B1D0E822C00ABA993 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A94F197D1D0E822C00ABA993 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DynamicControl/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = test.DynamicControl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A94F197E1D0E822C00ABA993 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DynamicControl/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = test.DynamicControl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A94F19801D0E822C00ABA993 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DynamicControlTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = test.DynamicControlTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DynamicControl.app/DynamicControl";
+			};
+			name = Debug;
+		};
+		A94F19811D0E822C00ABA993 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DynamicControlTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = test.DynamicControlTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DynamicControl.app/DynamicControl";
+			};
+			name = Release;
+		};
+		A94F19831D0E822C00ABA993 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DynamicControlUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = test.DynamicControlUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DynamicControl;
+			};
+			name = Debug;
+		};
+		A94F19841D0E822C00ABA993 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DynamicControlUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = test.DynamicControlUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DynamicControl;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A94F194A1D0E822C00ABA993 /* Build configuration list for PBXProject "DynamicControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A94F197A1D0E822C00ABA993 /* Debug */,
+				A94F197B1D0E822C00ABA993 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A94F197C1D0E822C00ABA993 /* Build configuration list for PBXNativeTarget "DynamicControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A94F197D1D0E822C00ABA993 /* Debug */,
+				A94F197E1D0E822C00ABA993 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A94F197F1D0E822C00ABA993 /* Build configuration list for PBXNativeTarget "DynamicControlTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A94F19801D0E822C00ABA993 /* Debug */,
+				A94F19811D0E822C00ABA993 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A94F19821D0E822C00ABA993 /* Build configuration list for PBXNativeTarget "DynamicControlUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A94F19831D0E822C00ABA993 /* Debug */,
+				A94F19841D0E822C00ABA993 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A94F19471D0E822C00ABA993 /* Project object */;
+}
