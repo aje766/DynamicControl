@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A91481401D11299A001577BC /* Authenticator.m in Sources */ = {isa = PBXBuildFile; fileRef = A914813F1D11299A001577BC /* Authenticator.m */; };
+		A91481431D11349F001577BC /* NSDictionary+TMW_DictionaryCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = A91481421D11349F001577BC /* NSDictionary+TMW_DictionaryCategory.m */; };
+		A91481461D11384F001577BC /* TextFieldValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = A91481451D11384F001577BC /* TextFieldValidator.m */; };
+		A91481491D113948001577BC /* DCTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = A91481481D113948001577BC /* DCTextField.m */; };
 		A94F19541D0E822C00ABA993 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A94F19531D0E822C00ABA993 /* main.m */; };
 		A94F19571D0E822C00ABA993 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A94F19561D0E822C00ABA993 /* AppDelegate.m */; };
 		A94F195A1D0E822C00ABA993 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A94F19591D0E822C00ABA993 /* ViewController.m */; };
@@ -35,6 +39,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A914813E1D11299A001577BC /* Authenticator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Authenticator.h; sourceTree = "<group>"; };
+		A914813F1D11299A001577BC /* Authenticator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Authenticator.m; sourceTree = "<group>"; };
+		A91481411D11349F001577BC /* NSDictionary+TMW_DictionaryCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+TMW_DictionaryCategory.h"; sourceTree = "<group>"; };
+		A91481421D11349F001577BC /* NSDictionary+TMW_DictionaryCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+TMW_DictionaryCategory.m"; sourceTree = "<group>"; };
+		A91481441D11384F001577BC /* TextFieldValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldValidator.h; sourceTree = "<group>"; };
+		A91481451D11384F001577BC /* TextFieldValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFieldValidator.m; sourceTree = "<group>"; };
+		A91481471D113948001577BC /* DCTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTextField.h; sourceTree = "<group>"; };
+		A91481481D113948001577BC /* DCTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTextField.m; sourceTree = "<group>"; };
 		A94F194F1D0E822C00ABA993 /* DynamicControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DynamicControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A94F19531D0E822C00ABA993 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A94F19551D0E822C00ABA993 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -101,8 +113,16 @@
 		A94F19511D0E822C00ABA993 /* DynamicControl */ = {
 			isa = PBXGroup;
 			children = (
+				A91481441D11384F001577BC /* TextFieldValidator.h */,
+				A91481451D11384F001577BC /* TextFieldValidator.m */,
+				A91481471D113948001577BC /* DCTextField.h */,
+				A91481481D113948001577BC /* DCTextField.m */,
+				A91481411D11349F001577BC /* NSDictionary+TMW_DictionaryCategory.h */,
+				A91481421D11349F001577BC /* NSDictionary+TMW_DictionaryCategory.m */,
 				A94F19551D0E822C00ABA993 /* AppDelegate.h */,
 				A94F19561D0E822C00ABA993 /* AppDelegate.m */,
+				A914813E1D11299A001577BC /* Authenticator.h */,
+				A914813F1D11299A001577BC /* Authenticator.m */,
 				A94F19581D0E822C00ABA993 /* ViewController.h */,
 				A94F19591D0E822C00ABA993 /* ViewController.m */,
 				A94F195B1D0E822C00ABA993 /* Main.storyboard */,
@@ -270,8 +290,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A91481431D11349F001577BC /* NSDictionary+TMW_DictionaryCategory.m in Sources */,
 				A94F195A1D0E822C00ABA993 /* ViewController.m in Sources */,
+				A91481401D11299A001577BC /* Authenticator.m in Sources */,
 				A94F19571D0E822C00ABA993 /* AppDelegate.m in Sources */,
+				A91481461D11384F001577BC /* TextFieldValidator.m in Sources */,
+				A91481491D113948001577BC /* DCTextField.m in Sources */,
 				A94F19541D0E822C00ABA993 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -498,6 +522,7 @@
 				A94F197E1D0E822C00ABA993 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A94F197F1D0E822C00ABA993 /* Build configuration list for PBXNativeTarget "DynamicControlTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +531,7 @@
 				A94F19811D0E822C00ABA993 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A94F19821D0E822C00ABA993 /* Build configuration list for PBXNativeTarget "DynamicControlUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +540,7 @@
 				A94F19841D0E822C00ABA993 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
