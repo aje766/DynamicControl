@@ -33,11 +33,26 @@
                                     <action selector="testButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wK4-dK-8kq"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vWb-S6-2Xq">
+                                <rect key="frame" x="22" y="154" width="240" height="128"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ruy-Nm-JHc" customClass="RecentSearchTextField">
+                                        <rect key="frame" x="7" y="12" width="219" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="presentInView" destination="8bC-Xf-vdC" id="I0F-Cd-CaG"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
+                        <outlet property="propTxtNumber" destination="ruy-Nm-JHc" id="uSY-LF-w2L"/>
                         <outlet property="temp" destination="1mc-dE-LId" id="k6k-nv-ynI"/>
                     </connections>
                 </viewController>

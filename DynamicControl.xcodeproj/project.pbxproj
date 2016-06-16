@@ -19,6 +19,7 @@
 		A94F19621D0E822C00ABA993 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A94F19601D0E822C00ABA993 /* LaunchScreen.storyboard */; };
 		A94F196D1D0E822C00ABA993 /* DynamicControlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A94F196C1D0E822C00ABA993 /* DynamicControlTests.m */; };
 		A94F19781D0E822C00ABA993 /* DynamicControlUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A94F19771D0E822C00ABA993 /* DynamicControlUITests.m */; };
+		A970F5CC1D127D7C00EA0A7D /* RecentSearchTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = A970F5CB1D127D7C00EA0A7D /* RecentSearchTextField.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		A94F19731D0E822C00ABA993 /* DynamicControlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DynamicControlUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A94F19771D0E822C00ABA993 /* DynamicControlUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicControlUITests.m; sourceTree = "<group>"; };
 		A94F19791D0E822C00ABA993 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A970F5CA1D127D7C00EA0A7D /* RecentSearchTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentSearchTextField.h; sourceTree = "<group>"; };
+		A970F5CB1D127D7C00EA0A7D /* RecentSearchTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentSearchTextField.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +116,8 @@
 		A94F19511D0E822C00ABA993 /* DynamicControl */ = {
 			isa = PBXGroup;
 			children = (
+				A970F5CA1D127D7C00EA0A7D /* RecentSearchTextField.h */,
+				A970F5CB1D127D7C00EA0A7D /* RecentSearchTextField.m */,
 				A91481441D11384F001577BC /* TextFieldValidator.h */,
 				A91481451D11384F001577BC /* TextFieldValidator.m */,
 				A91481471D113948001577BC /* DCTextField.h */,
@@ -292,6 +297,7 @@
 			files = (
 				A91481431D11349F001577BC /* NSDictionary+TMW_DictionaryCategory.m in Sources */,
 				A94F195A1D0E822C00ABA993 /* ViewController.m in Sources */,
+				A970F5CC1D127D7C00EA0A7D /* RecentSearchTextField.m in Sources */,
 				A91481401D11299A001577BC /* Authenticator.m in Sources */,
 				A94F19571D0E822C00ABA993 /* AppDelegate.m in Sources */,
 				A91481461D11384F001577BC /* TextFieldValidator.m in Sources */,

@@ -8,21 +8,45 @@
 
 #import "ViewController.h"
 #import "TextFieldValidator.h"
+#import "RecentSearchTextField.h"
 
-@interface ViewController ()<NSURLSessionDelegate, UITextFieldDelegate>
+@interface ViewController ()<NSURLSessionDelegate, UITextFieldDelegate, RecentSearchTextFieldDelegate>
 {
     NSArray* arrProviderAuthenticator;
     DCTextField *objControlAdded;
     NSArray* arrProviderAuthenticatorControls;
 }
+
+@property (weak, nonatomic) IBOutlet RecentSearchTextField *propTxtNumber;
+
 @end
 
 @implementation ViewController
+@synthesize propTxtNumber;
+
+-(void)RecentSearchTextFieldChange:(UITextField*)textfield forTableList:(UITableView*)hintView
+{
+    CGRect newframe = [self.view convertRect:textfield.frame toView:self.view];
+    CGFloat height = (CGFloat)[hintView numberOfRowsInSection:0] * 30;
+    if (height>90) {
+        height = 90.0;
+    }
+    CGFloat yPos = CGRectGetMaxY(newframe);
+    if ((yPos + height)>[[UIScreen mainScreen] bounds].size.height - 300) {
+        yPos = CGRectGetMinY(newframe) - height - 10 ;
+    }
+    
+    hintView.frame = CGRectMake(newframe.origin.x, yPos, newframe.size.width, height);//[hintView numberOfRowsInSection:0];
+    [self.view addSubview:hintView];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-        [self.temp addRegx:@"[0-9]{10}" withMsg:@"test"];
+    [propTxtNumber setDelegate:self];
+    
+    
+    [self.temp addRegx:@"[0-9]{10}" withMsg:@"test"];
     
     NSError *error;
     NSURLSessionConfiguration *configration = [NSURLSessionConfiguration defaultSessionConfiguration];
@@ -163,7 +187,7 @@
     NSDictionary *jsonObject = [NSJSONSerialization JSONObjectWithData:[strJson dataUsingEncoding:NSUTF8StringEncoding] options:NSJSONReadingMutableContainers error:nil];
     
     NSLog(@"%@", jsonObject);
-    objControlAdded = [self controlMakerWithJSON:[jsonObject objectForKey:@"5"] onView:self.view];
+    //objControlAdded = [self controlMakerWithJSON:[jsonObject objectForKey:@"5"] onView:self.view];
     
     // Do any additional setup after loading the view, typically from a nib.
     
