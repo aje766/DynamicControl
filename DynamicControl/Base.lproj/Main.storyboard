@@ -34,10 +34,10 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vWb-S6-2Xq">
-                                <rect key="frame" x="22" y="154" width="240" height="128"/>
+                                <rect key="frame" x="24" y="153" width="241" height="159"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ruy-Nm-JHc" customClass="RecentSearchTextField">
-                                        <rect key="frame" x="7" y="12" width="219" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="219" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
@@ -47,12 +47,23 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Oyh-dW-oKh">
+                                <rect key="frame" x="-2" y="-3" width="324" height="483"/>
+                                <subviews>
+                                    <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1z5-dD-gHc">
+                                        <rect key="frame" x="2" y="1" width="321" height="479"/>
+                                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                                    </webView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="propTxtNumber" destination="ruy-Nm-JHc" id="uSY-LF-w2L"/>
+                        <outlet property="propWebViewHTML" destination="1z5-dD-gHc" id="FJt-Lf-K1q"/>
                         <outlet property="temp" destination="1mc-dE-LId" id="k6k-nv-ynI"/>
                     </connections>
                 </viewController>

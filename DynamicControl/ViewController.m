@@ -10,7 +10,7 @@
 #import "TextFieldValidator.h"
 #import "RecentSearchTextField.h"
 
-@interface ViewController ()<NSURLSessionDelegate, UITextFieldDelegate, RecentSearchTextFieldDelegate>
+@interface ViewController ()<NSURLSessionDelegate, UITextFieldDelegate, RecentSearchTextFieldDelegate, UIWebViewDelegate>
 {
     NSArray* arrProviderAuthenticator;
     DCTextField *objControlAdded;
@@ -18,30 +18,49 @@
 }
 
 @property (weak, nonatomic) IBOutlet RecentSearchTextField *propTxtNumber;
+@property (weak, nonatomic) IBOutlet UIWebView *propWebViewHTML;
 
 @end
 
 @implementation ViewController
-@synthesize propTxtNumber;
+@synthesize propTxtNumber, propWebViewHTML;
 
 -(void)RecentSearchTextFieldChange:(UITextField*)textfield forTableList:(UITableView*)hintView
 {
-    CGRect newframe = [self.view convertRect:textfield.frame toView:self.view];
+    
+    
+    CGPoint newframe = [self.view convertPoint:CGPointZero fromView:textfield];
     CGFloat height = (CGFloat)[hintView numberOfRowsInSection:0] * 30;
     if (height>90) {
         height = 90.0;
     }
-    CGFloat yPos = CGRectGetMaxY(newframe);
-    if ((yPos + height)>[[UIScreen mainScreen] bounds].size.height - 300) {
-        yPos = CGRectGetMinY(newframe) - height - 10 ;
-    }
-    
-    hintView.frame = CGRectMake(newframe.origin.x, yPos, newframe.size.width, height);//[hintView numberOfRowsInSection:0];
-    [self.view addSubview:hintView];
+//    CGFloat yPos = CGRectGetMaxY(newframe);
+//    if ((yPos + height)>[[UIScreen mainScreen] bounds].size.height - 300) {
+//        yPos = CGRectGetMinY(newframe) - height - 10 ;
+//    }
+//    
+//    hintView.frame = CGRectMake(newframe.origin.x, yPos, newframe.size.width, height);//[hintView numberOfRowsInSection:0];
+//    [self.view addSubview:hintView];
 }
+
+-(void)webViewDidFinishLoad:(UIWebView *)webView
+{
+    //NSString *yourHTMLSourceCodeString = [webView stringByEvaluatingJavaScriptFromString:@"document.body.innerHTML"];
+    NSString *yourHTMLSourceCodeString = [webView stringByEvaluatingJavaScriptFromString:@"document.getElementById('login-username').value = 'Ajay';"];
+    
+    NSLog(@"%@", yourHTMLSourceCodeString);
+    
+    
+}
+
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
+    [propWebViewHTML loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://login.yahoo.com/config/login?.src=fpctx&.intl=in&.lang=en-IN&.done=https://in.yahoo.com/%3fp=us"]]];
+    propWebViewHTML.delegate = self;
     
     [propTxtNumber setDelegate:self];
     
