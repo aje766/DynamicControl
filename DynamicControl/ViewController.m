@@ -206,7 +206,7 @@
     NSDictionary *jsonObject = [NSJSONSerialization JSONObjectWithData:[strJson dataUsingEncoding:NSUTF8StringEncoding] options:NSJSONReadingMutableContainers error:nil];
     
     NSLog(@"%@", jsonObject);
-    //objControlAdded = [self controlMakerWithJSON:[jsonObject objectForKey:@"5"] onView:self.view];
+    objControlAdded = [self controlMakerWithJSON:[jsonObject objectForKey:@"5"] onView:self.view];
     
     // Do any additional setup after loading the view, typically from a nib.
     

@@ -20,6 +20,10 @@
 		A94F196D1D0E822C00ABA993 /* DynamicControlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A94F196C1D0E822C00ABA993 /* DynamicControlTests.m */; };
 		A94F19781D0E822C00ABA993 /* DynamicControlUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A94F19771D0E822C00ABA993 /* DynamicControlUITests.m */; };
 		A970F5CC1D127D7C00EA0A7D /* RecentSearchTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = A970F5CB1D127D7C00EA0A7D /* RecentSearchTextField.m */; };
+		A9A412971D1820EC00FD4A73 /* SyncViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9A412961D1820EC00FD4A73 /* SyncViewController.m */; };
+		A9A4129C1D18213600FD4A73 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A9A4129B1D18213600FD4A73 /* DBManager.m */; };
+		A9A4129E1D18222400FD4A73 /* db_bank.db in Resources */ = {isa = PBXBuildFile; fileRef = A9A4129D1D18222400FD4A73 /* db_bank.db */; };
+		A9A412A01D18239600FD4A73 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A9A4129F1D18239600FD4A73 /* libsqlite3.0.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +70,12 @@
 		A94F19791D0E822C00ABA993 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A970F5CA1D127D7C00EA0A7D /* RecentSearchTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentSearchTextField.h; sourceTree = "<group>"; };
 		A970F5CB1D127D7C00EA0A7D /* RecentSearchTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentSearchTextField.m; sourceTree = "<group>"; };
+		A9A412951D1820EC00FD4A73 /* SyncViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyncViewController.h; sourceTree = "<group>"; };
+		A9A412961D1820EC00FD4A73 /* SyncViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyncViewController.m; sourceTree = "<group>"; };
+		A9A4129A1D18213600FD4A73 /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
+		A9A4129B1D18213600FD4A73 /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
+		A9A4129D1D18222400FD4A73 /* db_bank.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = db_bank.db; sourceTree = "<group>"; };
+		A9A4129F1D18239600FD4A73 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9A412A01D18239600FD4A73 /* libsqlite3.0.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +107,7 @@
 		A94F19461D0E822C00ABA993 = {
 			isa = PBXGroup;
 			children = (
+				A9A4129F1D18239600FD4A73 /* libsqlite3.0.tbd */,
 				A94F19511D0E822C00ABA993 /* DynamicControl */,
 				A94F196B1D0E822C00ABA993 /* DynamicControlTests */,
 				A94F19761D0E822C00ABA993 /* DynamicControlUITests */,
@@ -116,6 +128,7 @@
 		A94F19511D0E822C00ABA993 /* DynamicControl */ = {
 			isa = PBXGroup;
 			children = (
+				A9A4129D1D18222400FD4A73 /* db_bank.db */,
 				A970F5CA1D127D7C00EA0A7D /* RecentSearchTextField.h */,
 				A970F5CB1D127D7C00EA0A7D /* RecentSearchTextField.m */,
 				A91481441D11384F001577BC /* TextFieldValidator.h */,
@@ -130,6 +143,10 @@
 				A914813F1D11299A001577BC /* Authenticator.m */,
 				A94F19581D0E822C00ABA993 /* ViewController.h */,
 				A94F19591D0E822C00ABA993 /* ViewController.m */,
+				A9A412951D1820EC00FD4A73 /* SyncViewController.h */,
+				A9A412961D1820EC00FD4A73 /* SyncViewController.m */,
+				A9A4129A1D18213600FD4A73 /* DBManager.h */,
+				A9A4129B1D18213600FD4A73 /* DBManager.m */,
 				A94F195B1D0E822C00ABA993 /* Main.storyboard */,
 				A94F195E1D0E822C00ABA993 /* Assets.xcassets */,
 				A94F19601D0E822C00ABA993 /* LaunchScreen.storyboard */,
@@ -271,6 +288,7 @@
 				A94F19621D0E822C00ABA993 /* LaunchScreen.storyboard in Resources */,
 				A94F195F1D0E822C00ABA993 /* Assets.xcassets in Resources */,
 				A94F195D1D0E822C00ABA993 /* Main.storyboard in Resources */,
+				A9A4129E1D18222400FD4A73 /* db_bank.db in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,11 +316,13 @@
 				A91481431D11349F001577BC /* NSDictionary+TMW_DictionaryCategory.m in Sources */,
 				A94F195A1D0E822C00ABA993 /* ViewController.m in Sources */,
 				A970F5CC1D127D7C00EA0A7D /* RecentSearchTextField.m in Sources */,
+				A9A412971D1820EC00FD4A73 /* SyncViewController.m in Sources */,
 				A91481401D11299A001577BC /* Authenticator.m in Sources */,
 				A94F19571D0E822C00ABA993 /* AppDelegate.m in Sources */,
 				A91481461D11384F001577BC /* TextFieldValidator.m in Sources */,
 				A91481491D113948001577BC /* DCTextField.m in Sources */,
 				A94F19541D0E822C00ABA993 /* main.m in Sources */,
+				A9A4129C1D18213600FD4A73 /* DBManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
